@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    font-size: 13px;
+}
+
+.container {
+    min-width: 327px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container {
+    background-image: url("images/drawers.jpg");
+    background-position: center;
+    background-size: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+}
+
+.main {
+    background-color: white;
+    padding-left: 30px;
+    padding-bottom: 22px;
+    padding-right: 32px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+}
+
+.main-text h3 {
+    padding-bottom: 22px;
+    color: hsl(217, 19%, 35%);
+}
+
+.main-text p {
+    padding-bottom: 30px;
+    color: hsl(212, 23%, 69%);
+}
+
+#michelle {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.main-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.michelle {
+    display: flex;
+    width: 100%;
+}
+
+.michelle-data time {
+    color: hsl(212, 23%, 69%);
+}
+
+.share-wrapper {
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.share-wrapper:hover {
+    cursor: pointer;
+}
+
+.share-popup {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 64px;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    background-color: hsl(217, 19%, 35%);
+    z-index: 2;
+    align-items: center;
+    display: none;
+}
+
+.share-content {
+    display: flex;
+    align-items: center;
+    margin-left: 33px;
+}
+
+.share-content p {
+    color: hsla(210, 46%, 95%, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.logo {
+    height: 20px;
+    width: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .share-popup {
+        position: absolute;
+        bottom: 100px;
+        left: 276px;
+        width: 248px;
+        border-radius: 12px 12px 12px 12px;
+    }
+
+    .container {
+        max-width: none;
+        width: 730px;
+        height: 280px;
+        flex-direction: row;
+    }
+
+    .main {
+        border-radius: 0 12px 12px 0;
+        padding-top: 18px;
+        width: 445px;
+    }
+
+    .img-container {
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+        width: 285px;
+        background-size: 200%;
+    }
+
+}
