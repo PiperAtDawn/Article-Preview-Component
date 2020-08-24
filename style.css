@@ -27,7 +27,7 @@ body {
 }
 
 .img-container {
-    background-image: url("./images/drawers.jpg");
+    background-image: url("images/drawers.jpg");
     background-position: center;
     background-size: 100%;
     height: 200px;
